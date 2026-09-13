@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>VD Music - Modern Audiophile Music Player</title>
+    <meta name="description" content="Open-source audio streaming and playback client engineered for music purists with deep OLED dark aesthetics and tactile minimalism." />
+    <meta property="og:title" content="VD Music - Modern Audiophile Music Player" />
+    <meta property="og:description" content="Open-source audio streaming and playback client engineered for music purists with deep OLED dark aesthetics and tactile minimalism." />
+    <link rel="icon" type="image/jpeg" href="/vd_music_logo.jpg" />
+    <link rel="icon" type="image/png" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#131317" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/vd_music_logo.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script type="module" crossorigin src="/assets/index-Wsv0322_.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ChBDQOdJ.css">
+  </head>
+  <body class="bg-[#131317] text-[#e4e1e7] antialiased selection:bg-[#f87171]/30 selection:text-[#ffb3b0]">
+    <div id="root">
+      <div id="vd-boot-splash" style="position: fixed; inset: 0; background-color: #131317; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; z-index: 99999;">
+        <div style="position: relative; width: 88px; height: 88px;">
+          <img src="/vd_music_logo.jpg" alt="VD Music" style="width: 88px; height: 88px; border-radius: 22px; object-fit: cover; box-shadow: 0 12px 36px rgba(0,0,0,0.7); border: 1px solid rgba(255,255,255,0.1);" />
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center;">
+          <span style="font-size: 19px; font-weight: 700; color: #f4f4f5; letter-spacing: -0.02em;">VD Music</span>
+          <span style="font-size: 12px; color: #a1a1aa; letter-spacing: 0.05em; text-transform: uppercase;">Audiophile Streaming</span>
+        </div>
+        <div style="width: 42px; height: 3px; background: rgba(255,255,255,0.08); border-radius: 99px; overflow: hidden; margin-top: 10px;">
+          <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #f87171, #fb923c); border-radius: 99px; animation: vdPulse 1.2s infinite ease-in-out;"></div>
+        </div>
+        <style>
+          @keyframes vdPulse {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+          }
+        </style>
+      </div>
+    </div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
+

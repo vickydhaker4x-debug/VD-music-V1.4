@@ -1,0 +1,8 @@
+{
+  "name": "VD Music",
+  "description": "Open-source audio streaming and playback client engineered for music purists with deep OLED dark aesthetics and tactile minimalism.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
